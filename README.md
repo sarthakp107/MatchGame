@@ -1,10 +1,43 @@
-# Getting Started with Create React App
+# Match Game 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Match Game where users are given a set of cards that are initially faced backwards. The goal is to match pairs of cards by flipping them over. Players take turns to flip two cards at a time. If the cards match, they remain face up. If they don't match, the cards are flipped back to their initial state. The game continues until all pairs are matched. 
 
-## Available Scripts
+## Technologies Used 
 
-In the project directory, you can run:
+Frontend: 
+- React: JavaScript library for building user interfaces. 
+- React Hooks: Utilized for managing state (useState), side effects (useEffect), and handling the game logic.
+
+## Features 
+
+1. Card Matching Logic 
+
+- Initially, all cards are displayed faced down. 
+- Players can click to flip the cards and attempt to find matching pairs. 
+- Cards that are matched remain face up, while unmatched cards flip back over. 
+- A score counter keeps track of the player's progress. 
+
+2. Game State Management 
+
+- The game state is managed using React's useState and useEffect hooks to track: 
+- The current set of cards (face down or face up). 
+- The currently flipped cards (to check for a match). 
+- The number of turns taken by the player. 
+
+3. Dynamic Card Generation 
+
+- Cards are dynamically shuffled and displayed for each new game session. 
+
+4. Turn Logic 
+
+- After every two card flips, the game checks if the cards match. 
+- If the cards match, they stay face up; if not, they flip back after a short delay. 
+
+5. Win Condition 
+
+- The game ends when all pairs of cards have been matched. 
+
+ 
 
 ### `npm start`
 
